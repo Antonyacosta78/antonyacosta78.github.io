@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="vendor/css/index.css">
+
+    <title>Hey, I'm Antony</title>
+  </head>
+  <body>
+
+       <div class="container-fluid">
+           <div id="main-content">
+               <div class="row">
+                   <div class="col-12 lang">
+                       <a href="en/">
+                            <div class="card">
+                                <img src="vendor/img/usa_flag.png" alt="Language: English" class="card-img" alt="">
+                                <div class="card-img-overlay">
+                                    <h1 class="text-center">English</h1>
+                                </div>
+                            </div>
+                        </a>
+                   </div>
+               </div>
+               <!-- ./row -->
+                
+               <br>
+
+               <div class="row">
+                    <div class="col-12 lang">
+                        <a href="es/">
+                            <div class="card">
+                                <img src="vendor/img/uruguay_flag.png" alt="Idioma: Español" class="card-img" alt="">
+                                <div class="card-img-overlay">
+                                    <h1 class="text-center">Español</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- ./row -->
+
+                <br>
+
+                <div class="row">
+                    <div class="col-12 lang">
+                        <a href="pt/">
+                            <div class="card">
+                                <img src="vendor/img/brazil_flag.png" alt="Lingua: Português" class="card-img" alt="">
+                                <div class="card-img-overlay">
+                                    <h2>Português</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- ./row -->
+           </div>
+           <!-- ./main-content -->
+       </div>
+       <!-- ./container-fluid -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript">
+        //little js tweak for centering, there's a better way, i know
+        function center(){
+            let mheight = document.getElementById("main-content").getBoundingClientRect().height;
+            let wheight = window.innerHeight;
+            document.getElementById("main-content").style.marginTop = (wheight/2-mheight/2)+"px";
+        }
+
+        window.onload = center;
+        window.addEventListener("resize", center);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+
+.lang{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 16rem;
+}
+
+.card-img-overlay{
+    font-family: 'Baloo Chettan', cursive;
+    background-color: rgba(0,0,0,.35);
+    color: white;
+    display: none;
+}
+
+.card:hover .card-img-overlay{
+    display: block;
+}
