@@ -1,0 +1,40 @@
+
+/* Wrapper's css */
+#wrapper{
+    position: relative;
+}
+#wrapper>*{
+    position: absolute;
+}
+
+#sidebar{
+    /* grid options */
+    width: 90px;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    padding: .5rem;
+
+    /* style options */
+    background-color: #5d3dff;
+    color: #f0ebf4;
+}
+
+#sidebar.collapsed{
+    display: none;
+}
+
+#main{
+    padding: 10px;
+    padding-left: 100px;     /* should match #sidebar width rules + padding rule for this element */
+    height: 300vh;
+}
+
+#main.collapsed{
+    padding-left: 10px;     /* should match padding rule for this element when not with .collapsed */
+}
+
+#profile-photo{
+    border-radius: 50%;
+}
+
