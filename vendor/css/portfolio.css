@@ -1,3 +1,33 @@
+/* for debug */
+div{
+    /* border: 1px dashed green; */
+}
+#main{
+    height: 400vh;
+}
+
+/* Media queries for breakpoints */
+@media (min-width: 768px) { 
+    #sidebar{
+        display: block !important;
+    }
+    #topbar{
+        display: none !important;
+    }
+    #main{
+        padding: 10px !important;
+        padding-left: 100px !important;     /* should match #sidebar width rules + padding rule for this element */
+    }
+}
+
+/* Global Elements*/
+a{
+    color: #DDD;
+    text-decoration: none;
+}
+a:hover{
+    color: #FFF;
+}
 
 /* Wrapper's css */
 #wrapper{
@@ -7,34 +37,73 @@
     position: absolute;
 }
 
-#sidebar{
+
+ /* custom classes */
+.bar{
     /* grid options */
-    width: 90px;
-    height: 100vh;
-    display: block;
-    position: fixed;
+    position: fixed !important;
     padding: .5rem;
+    z-index: 2;
 
     /* style options */
     background-color: #5d3dff;
     color: #f0ebf4;
 }
 
+.content-container{
+    height: 100vh;
+}
+
+
+#sidebar{
+    /* grid options */
+    width: 90px;
+    height: 100vh;
+    display: none; /* controlled by media query */
+    /* text options */
+    text-align: center;
+}
+
 #sidebar.collapsed{
-    display: none;
+    display: none !important;
+}
+
+ul.navigation{
+    font-size: 2.5rem;
+}
+
+ul.external-links{
+    font-size: 2rem;
+}
+
+#topbar{
+    height: 90px;
+    width: 100vw;
+    display: block;
+    text-align: left; 
+    line-height: 80px;
+    padding: .25rem;
+    padding-left: .5rem;
 }
 
 #main{
     padding: 10px;
-    padding-left: 100px;     /* should match #sidebar width rules + padding rule for this element */
-    height: 300vh;
+    padding-top: 100px; /* should match #topbar width rules + padding rule for this element */
 }
 
 #main.collapsed{
-    padding-left: 10px;     /* should match padding rule for this element when not with .collapsed */
+    padding-left: 10px !important;     /* should match padding rule for this element when not with .collapsed */
 }
 
-#profile-photo{
+.profile-photo{
     border-radius: 50%;
 }
+
+#topbar .profile-photo{
+    height: 75%;
+    min-width: 75%;
+    margin: auto;
+}
+
+
 
