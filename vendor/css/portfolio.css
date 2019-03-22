@@ -117,11 +117,41 @@ body{
     padding-top: 1rem;
     color: black;
 }
-#whoami h1{
+#whoami h1,#myskills h1,#getintouch h1{
     font-size: 4rem !important;
 }
-#whoami p{
-    font-size: 1rem;
+#whoami p, #myskills p, #getintouch p{
+    font-size: 1.5rem;
+}
+
+#myskills{
+    padding-top: 2rem;
+    background-color: #db5801;
+    height: 120vh;
+    color: black;
+}
+#myskills .icons-skills{
+    color: whitesmoke;
+    font-size: 8rem;
+    text-align: center;
+}
+#myskills .btn-xl{
+    color: #db5801;
+    background-color: #d6d6d6;
+}
+#myskills .btn-xl:hover{
+    background-color: #f5f5f5;;
+}
+#myskills .btn-xl:focus{
+    box-shadow: 0 0 0 .2rem #cfcfcfa4;
+}
+
+#getintouch{
+    padding-top: 1rem;
+    color: black;
+}
+#getintouch a{
+    color: black;
 }
 
 /* navbars css */
