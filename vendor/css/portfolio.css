@@ -20,6 +20,16 @@ div{
     }
 }
 
+@media (min-width: 576px){
+    ul.navigation{
+        font-size: 2.5rem !important;
+    }
+    
+    ul.external-links{
+        font-size: 2rem !important;
+    }
+}
+
 /* Global Elements*/
 a{
     color: #DDD;
@@ -50,6 +60,15 @@ a:hover{
     color: #f0ebf4;
 }
 
+.btn-xl{
+    padding: 1.25rem 2.25rem;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8rem;
+}
+
 .content-container{
     height: 100vh;
 }
@@ -69,11 +88,11 @@ a:hover{
 }
 
 ul.navigation{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 ul.external-links{
-    font-size: 2rem;
+    font-size: 1.33rem;
 }
 
 #topbar{
@@ -100,8 +119,7 @@ ul.external-links{
 }
 
 #topbar .profile-photo{
-    height: 75%;
-    min-width: 75%;
+    max-height: 70%;
     margin: auto;
 }
 
