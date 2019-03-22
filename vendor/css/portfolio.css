@@ -1,9 +1,6 @@
 /* for debug */
-div{
+div.content-container{
     /* border: 1px dashed green; */
-}
-#main{
-    height: 400vh;
 }
 
 /* Media queries for breakpoints */
@@ -15,11 +12,17 @@ div{
         display: none !important;
     }
     #main{
-        padding: 10px !important;
-        padding-left: 100px !important;     /* should match #sidebar width rules + padding rule for this element */
+        padding: 0px !important;
+        padding-left: 90px !important;     /* should match #sidebar width rules + padding rule for this element */
+    }
+    #presentation .photo-credits{
+        top: 10px !important;
+        right: 10px !important;
+    }
+    #whoami p{
+        margin: 2rem 0;
     }
 }
-
 @media (min-width: 576px){
     ul.navigation{
         font-size: 2.5rem !important;
@@ -28,6 +31,8 @@ div{
     ul.external-links{
         font-size: 2rem !important;
     }
+
+    
 }
 
 /* Global Elements*/
@@ -38,6 +43,10 @@ a{
 a:hover{
     color: #FFF;
 }
+body{
+    /* background-image: linear-gradient(#34495e,#54799e); */
+    color: whitesmoke;
+}
 
 /* Wrapper's css */
 #wrapper{
@@ -47,8 +56,7 @@ a:hover{
     position: absolute;
 }
 
-
- /* custom classes */
+/* custom classes */
 .bar{
     /* grid options */
     position: fixed !important;
@@ -56,24 +64,67 @@ a:hover{
     z-index: 2;
 
     /* style options */
-    background-color: #5d3dff;
-    color: #f0ebf4;
+    background-color: #d35400;
+    color: #f0fbf8;
 }
-
 .btn-xl{
     padding: 1.25rem 2.25rem;
     font-size: .85rem;
     font-weight: 700;
     text-transform: uppercase;
+    background-color: #d35400;
     border: none;
     border-radius: 8rem;
 }
-
+.btn-xl:hover{
+    background-color: #fd6500;;
+}
+.btn-xl:focus{
+    box-shadow: 0 0 0 .2rem #fd6500a4;
+}
 .content-container{
     height: 100vh;
+    margin: 0;
+    
 }
 
+/* Custom CSS for each panel */
+#presentation{
+    padding-top: 8%;
+    /* text */
+    text-align: center;
+    color: #fd6500;
 
+    /* background */
+    background-image: url("../img/presentation-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#presentation .photo-credits{
+    position: absolute;
+    top: 100px; /* should match #topbar height rules + 10px */
+    right: 10px;
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: whitesmoke;
+}
+
+#whoami{
+    padding-top: 1rem;
+    color: black;
+}
+#whoami h1{
+    font-size: 4rem !important;
+}
+#whoami p{
+    font-size: 1rem;
+}
+
+/* navbars css */
 #sidebar{
     /* grid options */
     width: 90px;
@@ -106,16 +157,25 @@ ul.external-links{
 }
 
 #main{
-    padding: 10px;
-    padding-top: 100px; /* should match #topbar width rules + padding rule for this element */
+    padding: 0px;
+    padding-top: 90px; /* should match #topbar height rules + padding rule for this element */
+    /* style */
+    background: whitesmoke;
+    /* text */
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    
 }
-
+#main h1{
+    font-size: 5rem;
+}
 #main.collapsed{
     padding-left: 10px !important;     /* should match padding rule for this element when not with .collapsed */
 }
 
 .profile-photo{
     border-radius: 50%;
+    border: 1px solid #a34400;
 }
 
 #topbar .profile-photo{
