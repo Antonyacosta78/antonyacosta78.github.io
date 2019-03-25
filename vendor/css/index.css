@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background-color: #db5801;
+}
 
 .lang{
     margin: 0 auto;
@@ -7,12 +11,28 @@
 }
 
 .card-img-overlay{
-    font-family: 'Baloo Chettan', cursive;
+    background-color: #db5801;
+    font-family: 'Roboto', sans-serif;
     background-color: rgba(0,0,0,.35);
     color: white;
-    display: none;
+    display: block;
+}
+.card-img{
+    border-radius: 0 !important;
 }
 
 .card:hover .card-img-overlay{
     display: block;
+}
+.card{
+    border: none;
+    border-radius:0;
+}
+@media (min-width: 768px){
+    .card-img-overlay{
+        display: none;
+    }
+    .card:hover .card-img-overlay{
+        display: block;
+    }
 }

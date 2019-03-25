@@ -34,6 +34,13 @@ div.content-container{
         float: left;
         margin: 1vw !important;
     }
+    #mywork .card-img-overlay{
+        display: none !important;
+    }
+    #mywork .card:hover .card-img-overlay{
+        background-color: #eb5e0071;
+        display: block !important;
+    }
 }
 @media (min-width: 576px){
     ul.navigation{
@@ -93,15 +100,28 @@ body{
     border: none;
     border-radius: 8rem;
 }
-.btn-xl:hover{
+.btn-lg{
+    padding: 0.75rem 1.5rem;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #d35400;
+    border: none;
+    border-radius: 8rem;
+}
+.btn-lg:hover, .btn-xl:hover{
     background-color: #fd6500;;
 }
-.btn-xl:focus{
+.btn-lg:focus, .btn-xl:focus{
     box-shadow: 0 0 0 .2rem #fd6500a4;
 }
 .profile-photo{
     border-radius: 50%;
     border: 1px solid #a34400;
+}
+.portfolio-box{
+    margin: 0;
+    padding: 0;
 }
 
 /* Custom CSS for each panel */
@@ -138,10 +158,10 @@ body{
     max-width: 70%;
     margin: 1rem auto;
 }
-#whoami h1,#myskills h1,#getintouch h1{
-    font-size: 4rem !important;
+#whoami h1,#myskills h1,#getintouch h1, #mywork h1{
+    font-size: 3.25rem !important;
 }
-#whoami p, #myskills p, #getintouch p{
+#whoami p, #myskills p, #getintouch p, #mywork p{
     font-size: 1.25rem;
 }
 
@@ -165,6 +185,35 @@ body{
 }
 #myskills .btn-xl:focus{
     box-shadow: 0 0 0 .2rem #cfcfcfa4;
+}
+
+#mywork{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    /* text */
+    color: black;
+
+    /* Background */
+    background-image: url("../img/mywork-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#mywork .card{
+    border: 1px solid #a34400;
+    border-radius: 0;    
+    width: inherit;
+    height: inherit;
+}
+#mywork .card-img{
+    border-radius: 0;
+}
+#mywork .card-img-overlay{
+    display: block;
+    background-color: #eb5e009f;
+    color: white;
 }
 
 #getintouch{

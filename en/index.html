@@ -37,6 +37,12 @@
           </li>
 
           <li>
+            <a href="#mywork" data-toggle="tooltip" data-placement="right" title="My Work">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+
+          <li>
             <a href="#getintouch" data-toggle="tooltip" data-placement="right" title="Get in touch">
               <i class="fas fa-phone"></i>
             </a>
@@ -65,23 +71,29 @@
           </div>
           &nbsp;
   
-          <div class="col-5">
+          <div class="col-6">
               <ul class="list-unstyled list-inline navigation">
   
                 <li class="list-inline-item">
-                  <a href="#whoami" data-toggle="tooltip" data-placement="right" title="Who Am I?">
+                  <a href="#whoami" data-toggle="tooltip" data-placement="bottom" title="Who Am I?">
                     <i class="fas fa-address-card"></i>
                   </a>
                 </li>
         
                 <li class="list-inline-item">
-                  <a href="#myskills" data-toggle="tooltip" data-placement="right" title="What are my skills?">
+                  <a href="#myskills" data-toggle="tooltip" data-placement="bottom" title="What are my skills?">
                     <i class="fas fa-tools"></i>
                   </a>
                 </li>
         
                 <li class="list-inline-item">
-                    <a href="#getintouch" data-toggle="tooltip" data-placement="right" title="Get in touch">
+                  <a href="#mywork" data-toggle="tooltip" data-placement="bottom" title="My Work">
+                    <i class="fas fa-briefcase"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#getintouch" data-toggle="tooltip" data-placement="bottom" title="Get in touch">
                       <i class="fas fa-phone"></i>
                     </a>
                 </li>
@@ -92,7 +104,7 @@
 
           <div style="border-left: 1px solid rgba(200, 200, 200, 0.5); margin: auto; margin-top: 8px; height: 64px;"></div>
 
-          <div class="col-4" >
+          <div class="col-3" >
             
               <ul class="list-unstyled external-links">
                 <li class="list-inline-item">
@@ -186,7 +198,64 @@
               </div> -->
               
             </div>
+            <a href="#mywork" class="btn btn-xl">My Work</a>
+        </div>
+        <div class="container-fluid content-container" id="mywork">
+            <h1>My Work</h1>
+            <p>While studying I did some coding that I am proud of.</p>
+            <br>
+            <div class="row">
+
+              <div class="col-lg-6 col-sm-6 portfolio-box">
+                <div class="card">
+                  <img class="card-img" src="../vendor/img/autopecas.png" alt="Portfolio image">  
+                  <div class="card-img-overlay text-center">
+                    <b>Autopeças</b>
+                    <p>A simple E-Commerce Project</p>
+                    <a href="https://github.com/themickael001/ecommerce_archel_framework/" class="btn btn-lg">Repo on Github</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 portfolio-box">
+                <div class="card">
+                  <img class="card-img" src="../vendor/img/canvas2dgame.png" alt="Portfolio image">  
+                  <div class="card-img-overlay">
+                    <b>Canvas Game 2d</b>
+                    <p>a 2d Game in Canvas, scripted in pure js</p>
+                    <a href="https://github.com/Antonyacosta78/Canvas2dGame" class="btn btn-lg">Repo on Github</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-6 portfolio-box">
+                <div class="card">
+                  <img class="card-img" src="../vendor/img/mvc.png" alt="Portfolio image">  
+                  <div class="card-img-overlay">
+                    <b>MVC</b>
+                    <p>A simple MVC Framework</p>
+                    <a href="https://github.com/Antonyacosta78/mvc" class="btn btn-lg">Repo on Github</a>
+
+                  </div>
+                </div>
+              </div>                         
+
+              <div class="col-lg-6 col-sm-6 portfolio-box">
+                <div class="card">
+                  <img class="card-img" src="../vendor/img/router.png" alt="Portfolio image">                    <div class="card-img-overlay">
+                    <b>php-router</b>
+                    <p>A native php router, inspired by mrjgreen/phroute</p>
+                    <a href="https://github.com/Antonyacosta78/php-router" class="btn btn-lg">Repo on Github</a>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br><br>
             <a href="#getintouch" class="btn btn-xl">Get in Touch</a>
+
         </div>
         <div class="container-fluid content-container" id="getintouch">
           <h1>Get in Touch</h1>
@@ -199,13 +268,38 @@
           </div>
         </div>
           
-        </div>
 
       </div>
       <!-- ./main -->
     </div>
     <!-- ./wrapper -->
 
+            <!-- Button trigger modal
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+              </button>
+        </div> -->
+      
+      <!-- Modals!! -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.

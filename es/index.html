@@ -1,26 +1,290 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
-    <script>
-      window.location.href = "../en";
-    </script>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Nanum+Gothic" rel="stylesheet"> 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../vendor/css/portfolio.css">
 
-    <title>Hello, world!</title>
+    <title>Hola, Soy Antony</title>
   </head>
   <body>
-    <h1 class="text-center">Trabajando! Vuelve el 21/03</h1>
+    <div id="wrapper">
+      <div id="sidebar" class="bar">
+         <img src="../vendor/img/profile.jpg" alt="Antony Acosta" class="img-fluid profile-photo">
+         
+         <br><br>
 
+        <ul class="list-unstyled navigation">
+          <li>
+            <a href="#whoami" data-toggle="tooltip" data-placement="right" title="¿Quién soy?">
+              <i class="fas fa-address-card"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#myskills" data-toggle="tooltip" data-placement="right" title="¿Cuáles son mis habilidades?">
+              <i class="fas fa-tools"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#mywork" data-toggle="tooltip" data-placement="right" title="Mi trabajo">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#getintouch" data-toggle="tooltip" data-placement="right" title="Contacto">
+              <i class="fas fa-phone"></i>
+            </a>
+          </li>
+
+        </ul>
+        <!-- ./navigation -->
+        <hr style="border-top: 1px solid rgba(200, 200, 200, 0.5);">
+
+        <ul class="list-unstyled external-links">
+          <li>
+            <a href="https://github.com/Antonyacosta78" data-toggle="tooltip" data-placement="right" title="Mi Perfil en Github">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+
+        </ul>
+        <!-- ./external-links -->
+      </div>
+      <!-- ./sidebar -->
+      <div class="bar" id="topbar">
+        <div class="row">
+
+          <div class="col-2">
+              <img src="../vendor/img/profile.jpg" alt="Antony Acosta" class="img-fluid profile-photo">
+          </div>
+          &nbsp;
+  
+          <div class="col-6">
+              <ul class="list-unstyled list-inline navigation">
+  
+                <li class="list-inline-item">
+                  <a href="#whoami" data-toggle="tooltip" data-placement="bottom" title="¿Quién soy?">
+                    <i class="fas fa-address-card"></i>
+                  </a>
+                </li>
+        
+                <li class="list-inline-item">
+                  <a href="#myskills" data-toggle="tooltip" data-placement="bottom" title="¿Cuáles son mis habilidades?">
+                    <i class="fas fa-tools"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#mywork" data-toggle="tooltip" data-placement="bottom" title="Mi Trabajo">
+                    <i class="fas fa-briefcase"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="#getintouch" data-toggle="tooltip" data-placement="bottom" title="Contacto">
+                      <i class="fas fa-phone"></i>
+                    </a>
+                </li>
+          
+              </ul>
+              <!-- ./navigation -->
+          </div>
+
+          <div style="border-left: 1px solid rgba(200, 200, 200, 0.5); margin: auto; margin-top: 8px; height: 64px;"></div>
+
+          <div class="col-3" >
+            
+              <ul class="list-unstyled external-links">
+                <li class="list-inline-item">
+                  <a href="https://github.com/Antonyacosta78"  data-toggle="tooltip" data-placement="right" title="Mi Perfil en Github">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                
+              </ul>
+              <!-- ./external-links -->
+          
+          </div>
+
+        </div>
+        <!-- ./row -->
+
+
+      </div>
+      <!-- ./topbar -->
+
+      <div id="main" class="container-fluid">
+        <div class="container-fluid content-container" id="presentation">
+            <div class="photo-credits"><i class="fas fa-camera"  data-toggle="tooltip" data-placement="left" title="Photo by Adam Muise on Unsplash"></i></div>
+          <h1>Hola</h1>
+          <h1>Soy Antony</h1>
+          <br><br>
+          <a href="#whoami" class="btn btn-xl">Sobre Mi</a>
+        </div>
+        <div class="container-fluid content-container" id="whoami">
+
+          <h1>¿Quién Soy?</h1>
+          <br><br>
+          <img src="../vendor/img/profile.jpg" alt="Antony Acosta" class="img-fluid profile-photo">
+          <p>  
+              Hola, mi nombre es Antony Acosta, soy un Desarrollador Web Junior de 19 años, recientemente egresado del Instituto Federal de Rio Grande del Sur en Brasil como Tecnico en Informática para Internet.
+              Siempre estoy dispuesto a tomar un desafío relacionado al desarrollo, planeo adquirir muchas nuevas habilidades y perfeccionar las que ya poseo trabajando como desarrollador web.
+          </p>
+            <a href="#myskills" class="btn btn-xl">Habilidades</a>
+
+        </div>
+        <div class="container-fluid content-container" id="myskills">
+          <h1>¿Cuáles son mis habilidades?</h1>
+          <p>Siempre busco aumentar mi conocimiento. 
+            Actualmente puedo trabajar fácilmente con cualquiera de estas tecnologías. (toca o posa el mouse para detalles)
+            </p>
+            <br>
+            <div class="row icons-skills">
+
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="PHP 7.2">
+                <i class="fab fa-php"></i>
+              </div>
+
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="JavaScript + jQuery">
+                <i class="fab fa-js"></i>
+              </div>
+              
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="Git Version Control + Github">
+                <i class="fab fa-git"></i>
+              </div>
+              
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="NodeJS 11.X">
+                <i class="fab fa-node-js"></i>
+              </div>
+              
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="HTML5 + CSS3">
+                <i class="fab fa-html5"></i>
+              </div>
+              
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="MySQL MariaDB">
+                <i class="fas fa-database"></i>
+              </div>
+            
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="Bootstrap 4">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+
+              <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="Ubuntu Linux (También CentOS para webserver)">
+                <i class="fab fa-ubuntu"></i>
+              </div>
+
+              <!-- <div class="col-3" data-toggle="tooltip" data-placement="top" 
+              title="">
+                <i class="fas fa-"></i>
+              </div> -->
+              
+            </div>
+            <a href="#mywork" class="btn btn-xl">Mi Trabajo</a>
+        </div>
+        <div class="container-fluid content-container" id="mywork">
+          <h1>Mi Trabajo</h1>
+          <p>Mientras estudiaba, hice algunos codigos de los cuales me siento orguyoso.</p>
+          <br>
+          <div class="row">
+
+            <div class="col-lg-6 col-sm-6 portfolio-box">
+              <div class="card">
+                <img class="card-img" src="../vendor/img/autopecas.png" alt="Portfolio image">  
+                <div class="card-img-overlay text-center">
+                  <b>Autopeças</b>
+                  <p>Un proyecto simple para un E-Commerce</p>
+                  <a href="https://github.com/themickael001/ecommerce_archel_framework/" class="btn btn-lg">Repo en Github</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6 portfolio-box">
+              <div class="card">
+                <img class="card-img" src="../vendor/img/canvas2dgame.png" alt="Portfolio image">  
+                <div class="card-img-overlay">
+                  <b>Canvas Game 2d</b>
+                  <p>un juego 2d en Canvas, codificado en js nativo</p>
+                  <a href="https://github.com/Antonyacosta78/Canvas2dGame" class="btn btn-lg">Repo en Github</a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6 portfolio-box">
+              <div class="card">
+                <img class="card-img" src="../vendor/img/mvc.png" alt="Portfolio image">  
+                <div class="card-img-overlay">
+                  <b>MVC</b>
+                  <p>Un simple MVC Framework</p>
+                  <a href="https://github.com/Antonyacosta78/mvc" class="btn btn-lg">Repo en Github</a>
+
+                </div>
+              </div>
+            </div>                         
+
+            <div class="col-lg-6 col-sm-6 portfolio-box">
+              <div class="card">
+                <img class="card-img" src="../vendor/img/router.png" alt="Portfolio image">                    <div class="card-img-overlay">
+                  <b>php-router</b>
+                  <p>Un enrutador hecho en PHP, inspirado en phroute</p>
+                  <a href="https://github.com/Antonyacosta78/php-router" class="btn btn-lg">Repo en Github</a>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <br><br>
+          <a href="#getintouch" class="btn btn-xl">Contacto</a>
+
+      </div>
+        <div class="container-fluid content-container" id="getintouch">
+          <h1>Contacto</h1>
+          <p>Actualmente estoy en búsqueda de un empleo, si estás interesado en contactarme, tienes alguna duda sobre mi trabajo o cualquier cosa relacionada a mi, no dudes en enviarme un mensaje, estaré encantado de responder.</p>
+          <div class="container">
+            <br>
+            <p class="text-center"><i class="fas fa-envelope"></i>  <b>Email: </b><a href="mailto:antonyacosta78@gmail.com">antonyacosta78@gmail.com</a> </p>
+            <p class="text-center"><i class="fas fa-phone"></i>     <b>Celular: </b> <a href="tel:(+598)92190466">(+598) 92 190 466</a></p>
+            <p class="text-center"><i class="fab fa-facebook"></i>  <b>Facebook: </b> <a href="https://www.facebook.com/antony.matias.1">Antony Acosta</a></p>
+          </div>
+        </div>
+          
+        </div>
+
+      </div>
+      <!-- ./main -->
+    </div>
+    <!-- ./wrapper -->
+
+  
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.
+      js, then Bootstrap JS -->
+      <!-- for some reason, firefox refuses to load jquery from cdn, so lets use it local -->
+    <script src="../vendor/js/jquery.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="../vendor/js/portfolio.js"></script>
   </body>
 </html>
