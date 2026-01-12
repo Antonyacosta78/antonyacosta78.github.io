@@ -1,5 +1,5 @@
 
-<div class="flex justify-center h-screen w-screen bg-primary">
+<div class="flex justify-center h-screen w-screen">
   <div class="place-self-center w-160 text-center text-secondary">
     <h2 class="text-5xl font-bold">Uh Oh!</h2>
    <p class="text-xl">My portfolio isn't ready just yet! do come back in a week or so to check on it!</p>
