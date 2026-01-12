@@ -16,10 +16,10 @@ export default function typewriter(options: TypeItOptions = {}): Attachment<HTML
     }
     
     new TypeIt(element, {
-      strings: text,
-      waitUntilVisible: true,
-      ...options,
-      afterComplete
-    }).go();
+			strings: text,
+			waitUntilVisible: true,
+			...options,
+			afterComplete
+		}).go();
   }
 }

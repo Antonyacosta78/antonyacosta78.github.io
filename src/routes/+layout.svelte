@@ -4,9 +4,13 @@
 	let { children } = $props();
 </script>
 
-<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen p-6">
-	{@render children()}
-	<div class="scanline"></div>
+<div class="bezel">
+	<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen">
+		<div class="p-6 size-full">
+			{@render children()}
+		</div>
+		<div class="scanline"></div>
+	</div>
 </div>
 
 <style>
