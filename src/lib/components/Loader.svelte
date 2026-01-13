@@ -34,7 +34,7 @@
 </script>
 
 {#await renderChildrenPromise}
-  <div class="size-full justify-center flex">
+  <div class="loader justify-center flex">
   <div class="place-self-center text-center">
     <!-- 
       hacky little thing we have to do if we want the word to not flash at first while javascript 
@@ -55,3 +55,12 @@
 {:then _} 
   {@render children()}
 {/await}
+
+
+<style>
+  .loader {
+    height: calc(100vh - (var(--spacing) * 12));
+    width: 100%;
+  }
+  
+</style>
