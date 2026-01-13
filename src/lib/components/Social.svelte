@@ -13,6 +13,6 @@
   
 </script>
 
-<a {href} class="text-accent-secondary hover:text-accent">
+<a {href} class="text-accent-secondary hover:text-accent" target="_blank">
   {@render children()}
 </a>
