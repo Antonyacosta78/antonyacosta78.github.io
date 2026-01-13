@@ -8,7 +8,7 @@
   
 </script>
 
-<pre>
+<pre class="text-lg md:text-2xl">
  ______________
 &lt; Keep Rollin' &gt;
  --------------
