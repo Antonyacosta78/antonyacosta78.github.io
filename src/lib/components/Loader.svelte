@@ -42,11 +42,11 @@
       string to be typed is defined in typewriterOptions
     -->
     <!-- svelte-ignore a11y_missing_content -->
-    <h1 {@attach typewriter(typewriterOptions)} class="text-7xl font-bold"></h1>
+    <h1 {@attach typewriter(typewriterOptions)} class="text-5xl md:text-7xl font-bold"></h1>
     <br>
     <br>
     <br>
-    <span {@attach delayDisplay(typingPromise, true)} {@attach spinner(500)} class="text-5xl font-medium"></span>
+    <span {@attach delayDisplay(typingPromise, true)} {@attach spinner(500)} class="text-3xl md:text-5xl font-medium"></span>
     <br>
     <br>
     <br>
