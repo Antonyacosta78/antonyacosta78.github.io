@@ -1,6 +1,7 @@
 <script lang="ts">
 	import typewriter from '$lib/attachments/typewriter';
 	import { getCommandContext } from '$lib/core/command.context';
+	import StickToBottom from '../StickToBottom.svelte';
 	import type { ConsoleProps } from './console.props';
 
 	let { enabled, oncommand }: ConsoleProps = $props();
@@ -37,21 +38,23 @@
   let page = $derived(pages[pageNumber]);
 </script>
 
-<div class="wrapper absolute bottom-0 left-0 flex h-3/20 w-full flex-col justify-end">
-	<p class="text-md mb-1 text-center font-normal">Tap to run command</p>
-
-	<div class="wrapper border-accent flex w-full flex-col justify-around border-2">
-		<div class="commands flex justify-around py-1">
-			{#each page as cmd}
-				{@render command(cmd)}
-			{/each}
-		</div>
-		<div class="buttons flex w-full">
-			{@render button('<', () => changePage(-1))}
-			{@render button('>', () => changePage(+1))}
-		</div>
-	</div>
-</div>
+<StickToBottom>
+  <div class="wrapper flex h-3/20 w-screen flex-col justify-end bg-primary text-secondary dark:bg-secondary dark:text-primary ">
+    <p class="text-md mb-1 text-center font-normal">Tap to run command</p>
+  
+    <div class="wrapper border-accent flex w-full flex-col justify-around border-2">
+      <div class="commands flex justify-around py-1">
+        {#each page as cmd}
+          {@render command(cmd)}
+        {/each}
+      </div>
+      <div class="buttons flex w-full">
+        {@render button('<', () => changePage(-1))}
+        {@render button('>', () => changePage(+1))}
+      </div>
+    </div>
+  </div>
+</StickToBottom>
 
 {#snippet command(name: string)}
 	<button onclick={() => oncommand(name)} disabled={!enabled} class="disabled:text-muted">

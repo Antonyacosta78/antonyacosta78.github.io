@@ -25,7 +25,7 @@
 </script>
 
 <div>
-  <p class="w-1/2 sm:w-full">
+  <p class="w-full">
     <span {@attach typewriter({ afterComplete: () => { parts.name = true; nameDone(true)} })}>Antony Acosta</span>
     <br>
     <br>
