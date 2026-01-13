@@ -1,12 +1,20 @@
 <script lang="ts">
+	import { setScrollContext } from '$lib/core/scroll.context';
 	import '../app.css';
+
+	let scrollTarget: HTMLElement | undefined = $state();
+
+	setScrollContext({ targetAccessor: () =>  scrollTarget });
 
 	let { children } = $props();
 </script>
 
 <div class="bezel">
-	<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen overflow-auto">
-		<div class="p-6 size-full">
+	<div
+		bind:this={scrollTarget}
+		class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen overflow-auto"
+	>
+		<div class="min:size-full p-6 h-fit">
 			{@render children()}
 		</div>
 		<div class="scanline"></div>
