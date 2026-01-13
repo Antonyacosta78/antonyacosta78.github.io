@@ -5,7 +5,7 @@
 </script>
 
 <div class="bezel">
-	<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen">
+	<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen overflow-auto">
 		<div class="p-6 size-full">
 			{@render children()}
 		</div>

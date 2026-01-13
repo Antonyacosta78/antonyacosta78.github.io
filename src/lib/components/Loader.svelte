@@ -21,6 +21,7 @@
   
   const typewriterOptions = { 
     startDelay: 250,
+    speed: 100,
     strings: "Initializing",
     afterComplete: () => setTimeout(resolveTypingPromise, 100)
   }

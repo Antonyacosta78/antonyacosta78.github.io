@@ -9,7 +9,6 @@ function* characterGenerator(): Generator<string> {
   }
 }
 
-
 export default function spinner(delay: number = 100): Attachment {
   return (element) => {
     const chars = characterGenerator();

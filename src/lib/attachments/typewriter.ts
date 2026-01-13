@@ -18,6 +18,10 @@ export default function typewriter(options: TypeItOptions = {}): Attachment<HTML
     new TypeIt(element, {
 			strings: text,
 			waitUntilVisible: true,
+			lifeLike: false,
+			speed: 30,
+			nextStringDelay: 0,
+			cursorChar: '_',
 			...options,
 			afterComplete
 		}).go();
