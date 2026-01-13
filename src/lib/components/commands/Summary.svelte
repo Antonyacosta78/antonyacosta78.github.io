@@ -19,27 +19,30 @@
     }
   });
   
+  let nameDone: (v: unknown) => void;
+  const namePromise = new Promise((res) => { nameDone = res });
+  
 </script>
 
 <div>
   <p class="w-1/2 sm:w-full">
-    <span {@attach typewriter({ afterComplete: () => parts.name = true })}>Antony Acosta</span>
+    <span {@attach typewriter({ afterComplete: () => { parts.name = true; nameDone(true)} })}>Antony Acosta</span>
     <br>
     <br>
-    <span {@attach typewriter({ afterComplete: () => parts.role = true })}>Role: Fullstack Developer</span>
+    <span {@attach typewriter({ afterComplete: () => parts.role = true }, namePromise)}>Role: Fullstack Developer</span>
     <br>
     <br>
-    <span {@attach typewriter({ afterComplete: () => parts.experience = true })}>Experience: ≈ 7 years (in the industry since 2019)</span>
+    <span {@attach typewriter({ afterComplete: () => parts.experience = true }, namePromise)}>Experience: ≈ 7 years (in the industry since 2019)</span>
     <br>
     <br>
-    <span {@attach typewriter({ afterComplete: () => parts.profile = true })}>
+    <span {@attach typewriter({ afterComplete: () => parts.profile = true }, namePromise)}>
       Profile: Dynamic Web Developer with seven years of experience. Adept at
         collaborating in close knit multidisciplinary teams. Proficient using technical expertise to solve complex challenges and drive
         project success.
     </span>
     <br>
     <br>
-    <span {@attach typewriter({ afterComplete: () => parts.tech = true })}>
+    <span {@attach typewriter({ afterComplete: () => parts.tech = true }, namePromise)}>
       Technology Stack:
       <br>
         - Front End: [ React, Angular, Vue, Svelte ]
