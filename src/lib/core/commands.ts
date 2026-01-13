@@ -4,8 +4,9 @@ import Greeting from "$lib/components/commands/Greeting.svelte";
 import Help from "$lib/components/commands/Help.svelte";
 import Quote from "$lib/components/commands/Quote.svelte";
 import Summary from "$lib/components/commands/Summary.svelte";
+import Armadillo from '$lib/components/commands/Armadillo.svelte';
 
-export type CommandComponent = Component<CommandProps>
+export type CommandComponent = Component<CommandProps>;
 
 const commands = new Map<string, CommandComponent>();
 
@@ -13,6 +14,7 @@ commands.set('greeting', Greeting);
 commands.set('quote', Quote);
 commands.set('help', Help);
 commands.set('summary', Summary);
+commands.set('armadillo', Armadillo);
 
 export default commands;
 
