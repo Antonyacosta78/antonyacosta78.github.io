@@ -5,6 +5,7 @@ import Help from "$lib/components/commands/Help.svelte";
 import Quote from "$lib/components/commands/Quote.svelte";
 import Summary from "$lib/components/commands/Summary.svelte";
 import Armadillo from '$lib/components/commands/Armadillo.svelte';
+import Pukeko from '$lib/components/commands/Pukeko.svelte';
 
 export type CommandComponent = Component<CommandProps>;
 
@@ -15,6 +16,7 @@ commands.set('quote', Quote);
 commands.set('help', Help);
 commands.set('summary', Summary);
 commands.set('armadillo', Armadillo);
+commands.set('pukeko', Pukeko);
 
 export default commands;
 
