@@ -5,43 +5,45 @@
 </script>
 
 <div class="bezel">
-	<div class="crt bg-primary">
-		{@render children()}
+	<div class="crt bg-primary text-secondary dark:bg-secondary dark:text-primary h-screen w-screen overflow-auto">
+		<div class="p-6 size-full">
+			{@render children()}
+		</div>
 		<div class="scanline"></div>
 	</div>
 </div>
 
 <style>
 	@keyframes scanline {
-    0% {
+		0% {
 			bottom: 100%;
-    }
-    80% {
+		}
+		80% {
 			bottom: 100%;
-    }
-    100% {
+		}
+		100% {
 			bottom: 0%;
-    }
+		}
 	}
-	
+
 	.scanline {
-    width: 100%;
-    height: 10px;
-    z-index: 8;
-    background: linear-gradient(
+		width: 100%;
+		height: 10px;
+		z-index: 8;
+		background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0) 0%,
 			rgba(255, 255, 255, 0.2) 10%,
 			rgba(0, 0, 0, 0.1) 100%
-    );
-    opacity: 0.1;
-    position: absolute;
-    bottom: 100%;
-    animation: scanline 20s linear infinite;
+		);
+		opacity: 0.1;
+		position: absolute;
+		bottom: 100%;
+		animation: scanline 20s linear infinite;
 	}
 
 	.crt {
-		filter: blur(.5px);
+		filter: blur(0.5px);
 	}
 
 	.crt:before {
@@ -57,7 +59,4 @@
 		z-index: 2;
 		pointer-events: none;
 	}
-	
-	
-	
 </style>
