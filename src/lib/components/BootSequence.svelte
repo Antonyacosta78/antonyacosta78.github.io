@@ -20,13 +20,13 @@
 
     typewriter
       .type("boot sequence")
-      .pause(500)
+      .pause(200)
       .type(".")
-      .pause(500)
+      .pause(200)
       .type(".")
-      .pause(500)
+      .pause(200)
       .type(".")
-      .pause(500)
+      .pause(200)
       .break()
       .break()
       .break()
@@ -61,7 +61,7 @@
     const typewriter = new TypeIt(target, {
       cursorChar: "_",
       startDelay: 250,
-      speed: 100,
+      speed: 75,
     })
     
     performBootSequence(typewriter);
